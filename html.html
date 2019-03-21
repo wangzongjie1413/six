@@ -68,7 +68,7 @@
                             <h2>青玉案</h2>
                             <p>江南秋色垂垂暮，算幽事，浑无数。日日沧浪亭畔路。西风林下，夕阳水际，独自寻诗去。</p>
                             <p>可怜愁与闲俱赴。待把尘劳截愁住。灯影幢幢天欲曙。闲中心事，忙中情味，并入西楼雨。</p>
-                            <a href="#"><img src="images/renwu-logo5.png" alt="">排热达木·苏力坦</a>
+                            <a href="https://pari23.gitee.io/wangye" target="_blank"><img src="images/renwu-logo5.png" alt="">排热达木·苏力坦</a>
                         </div>
                     </div>
                 </div>
@@ -104,11 +104,14 @@
     <script>
         $("ul li").click(function() {
             var index = $(this).index();
-            $(".contain-body .tab-body").eq(index).fadeIn(1500).siblings().hide();
+            $(".contain-body .tab-body").eq(index).siblings().fadeOut(1000);
+            setTimeout(function() {
+                $(".contain-body .tab-body").eq(index).fadeIn(1500);
+            }, 1000);
             setTimeout(function() {
                 $('.contain-body .tab-body').eq(index).children().slideDown(2000);
-            }, 1000);
-            $(".contain-body .tab-body").eq(index).siblings().children().hide()
+            }, 1500);
+            $(".contain-body .tab-body").eq(index).siblings().children().fadeOut(1000)
         })
         $("ul li").hover(function() {
             var index = $(this).index();
