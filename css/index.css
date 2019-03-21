@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.contain-body {
+    width: 100%;
+    height: 625px;
+}
+
+.tab-body {
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+
+.page {
+    display: block;
+}
+
+.page-2 {
+    background: url("../images/bg1.png") no-repeat center center;
+    background-size: 100%;
+}
+
+.page-3 {
+    background: url("../images/bg2.png") no-repeat center center;
+    background-size: 100%;
+}
+
+.page-4 {
+    background: url("../images/bg3.png") no-repeat center center;
+    background-size: 100%;
+}
+
+.page-5 {
+    background: url("../images/bg4.png") no-repeat center center;
+    background-size: 100%;
+}
+
+.page-6 {
+    background: url("../images/bg5.png") no-repeat center center;
+    background-size: 100%;
+}
+
+.nav-tab {
+    z-index: 999;
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+    height: 300px;
+    width: 65px;
+}
+
+.nav-tab ul li {
+    height: 50px;
+    width: 100%;
+    list-style: none;
+    line-height: 50px;
+}
+
+.nav-tab ul li a {
+    display: block;
+    height: 100%;
+    color: #333;
+    text-decoration: none;
+    font-family: "楷体"
+}
+
+
+/* 人物页 */
+
+.renwu {
+    display: none;
+    width: 600px;
+    height: 500px;
+    position: absolute;
+    right: 25%;
+    top: 20%;
+}
+
+.renwu>div>img {
+    width: 200px;
+    height: 400px;
+}
+
+.renwu-text {
+    padding-top: 80px;
+    padding-left: 50px;
+    width: 360px;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-align: center;
+}
+
+.renwu-text h2 {
+    text-align: center;
+    font-family: "楷体";
+    margin-bottom: 20px;
+}
+
+.renwu-text p {
+    text-indent: 2em;
+    font-family: "楷体"
+}
+
+.renwu-text a {
+    text-decoration: none;
+    color: #333;
+    font-family: "楷体";
+    font-size: 20px;
+}
+
+.renwu-text img {
+    position: relative;
+    top: 20px;
+}

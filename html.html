@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/gif.css">
+    <title>Six,Six,Six</title>
+</head>
+
+<body>
+    <div class="contain">
+        <div class="nav-tab">
+            <ul>
+                <li><a href="#">水墨江山</a></li>
+                <li><a href="#">墨韵江南</a></li>
+                <li><a href="#">江山如画</a></li>
+                <li><a href="#">晓风残月</a></li>
+                <li><a href="#">暗香疏影</a></li>
+                <li><a href="#">秋水长天</a></li>
+            </ul>
+        </div>
+        <div class="contain-body">
+            <div class="tab-body page-1 page">
+                <div class="body-gif">
+                    <div id="box">
+                        <img src="images/bj.png" class="bj" />
+                        <img src="images/1s.png" class="sc1" />
+                        <img src="images/2s.png" class="sc2" />
+                        <img src="images/text_lsm.png" id="lsm" />
+                    </div>
+                </div>
+            </div>
+            <div class="tab-body page-2">
+                <div class="renwu">
+                    <div class="renwu-1">
+                        <img src="images/renwu2.png" alt="">
+                        <div class="renwu-text">
+                            <h2>凌波不过横塘路</h2>
+                            <p>凌波不过横塘路，但目送、芳尘去。锦瑟华年谁与度？月桥花院，琐窗朱户，只有春知处。</p>
+                            <p>飞云冉冉蘅皋暮，彩笔新题断肠句。试问闲情都几许？一川烟草，满城风絮，梅子黄时雨。</p>
+                            <a href="http://www.wangzongjie.top" target="_blank"><img src="images/renwu-logo1.png" alt="">王宗杰</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-body page-3">
+                <div class="renwu">
+                    <div class="renwu-2">
+                        <img src="images/renwu4.png" alt="">
+                        <div class="renwu-text">
+                            <h2>虞美人</h2>
+                            <p>小楼昨夜又东风，故国不堪回首月明中。雕栏玉砌应犹在，只是朱颜改。问君能有几多愁，恰似一江春水向东流。</p>
+                            <p>风回小院庭芜绿，柳眼春相续。凭阑半日独无言，依旧竹声新月似当年。笙歌未散尊前在，池面冰初解。烛明香暗画楼深，</p>
+                            <a href="#"><img src="images/renwu-logo2.png" alt="">邓婷玉</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-body page-4">
+                <div class="renwu">
+                    <div class="renwu-3">
+                        <img src="images/renwu5.png" alt="">
+                        <div class="renwu-text">
+                            <h2>青玉案</h2>
+                            <p>江南秋色垂垂暮，算幽事，浑无数。日日沧浪亭畔路。西风林下，夕阳水际，独自寻诗去。</p>
+                            <p>可怜愁与闲俱赴。待把尘劳截愁住。灯影幢幢天欲曙。闲中心事，忙中情味，并入西楼雨。</p>
+                            <a href="#"><img src="images/renwu-logo5.png" alt="">排热达木·苏力坦</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-body page-5">
+                <div class="renwu">
+                    <div class="renwu-4">
+                        <img src="images/renwu3.png" alt="">
+                        <div class="renwu-text">
+                            <h2>水仙子</h2>
+                            <p>一江烟水照晴岚，两岸人家接画檐，芰荷丛一段秋光淡。</p>
+                            <p>看沙鸥舞再三，卷香风十里珠帘。画船儿天边至，酒旗儿风外飐。爱杀江南！</p>
+                            <a href="https://zhouyuepu.gitee.io/my-web/" target="_blank"><img src="images/renwu-logo3.png" alt="">周玥璞</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-body page-6">
+                <div class="renwu">
+                    <div class="renwu-5">
+                        <img src="images/renwu1.png" alt="">
+                        <div class="renwu-text">
+                            <h2>行香子</h2>
+                            <p>一叶舟轻，双桨鸿惊。水天清、影湛波平。鱼翻藻鉴，鹭点烟汀。过沙溪急，霜溪冷，月溪明。</p>
+                            <p>重重似画，曲曲如屏。算当年、虚老严陵。君臣一梦，今古空名。但远山长，云山乱，晓山青。</p>
+                            <a href="http://homework.zhurentao.top" target="_blank"><img src="images/renwu-logo4.png" alt="">祝仁涛</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        $("ul li").click(function() {
+            var index = $(this).index();
+            $(".contain-body .tab-body").eq(index).fadeIn(1500).siblings().hide();
+            setTimeout(function() {
+                $('.contain-body .tab-body').eq(index).children().slideDown(2000);
+            }, 1000);
+            $(".contain-body .tab-body").eq(index).siblings().children().hide()
+        })
+        $("ul li").hover(function() {
+            var index = $(this).index();
+            $(this).children().css("background-image", "url(images/text_" + (index + 1) + ".png)").css("background-repeat", "no-repeat");
+            $(this).children().css("font-size", "0").css("width", "0px");
+            $(this).children().animate({
+                width: "106px"
+            }, 1000)
+
+        }, function() {
+            $(this).children().css("background-image", "none").css("width", "70px").css("font-size", "14px");
+        })
+    </script>
+</body>
+
+</html>
